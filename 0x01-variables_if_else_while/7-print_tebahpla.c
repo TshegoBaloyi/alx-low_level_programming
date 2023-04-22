@@ -1,17 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - prints reverse
- * Return: always zero
+ * main-program entry point.
+ * Return:always 0
  */
 int main(void)
 {
-	char ch;
+	char i;
 
-	for (ch = 'z', ch >= 'a'; ch--)
-	{
-		putchar(ch);
-	}
+	for (i = 'z'; i >= 'a'; i--)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
-
