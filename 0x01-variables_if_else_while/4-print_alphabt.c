@@ -5,7 +5,7 @@
  * main - alphabet witout q and e
  * Return: always 0
  */
-int (void)
+int main(void)
 {
 	int i;
 
