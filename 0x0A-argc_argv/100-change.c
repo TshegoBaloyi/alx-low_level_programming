@@ -35,8 +35,7 @@ int main(int argc, char *argv[])
 	for (k = 0; k < 5 && num >= 0; k++)
 
 	{
-	
-		while (num >= coins[k])
+	while (num > = coins[k])
 
 		{
 		     result++;
