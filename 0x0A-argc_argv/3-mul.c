@@ -10,19 +10,19 @@
 int _atoi(char *s)
 
 {
-	int i, d, k, len, g, digit;
+	int i, d, n, len, f, digit;
 
 	i = 0;
 	d = 0;
-	k = 0;
+	n = 0;
 	len = 0;
-	g = 0;
+	f = 0;
 	digit = 0;
 
 		while (s[len] != '\0')
 		len++;
 
-		while (i < len && g == 0)
+		while (i < len && f == 0)
 
 	{
 		if (s[i] == '-')
@@ -36,20 +36,20 @@ int _atoi(char *s)
 
 				digit = -digit;
 
-			k = k * 10 + digit;
-			g = 1;
+			n = n * 10 + digit;
+			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-				g = 0;
+				f = 0;
 		}
 		i++;
 	}
 
-	if (g == 0)
+	if (f == 0)
 	return (0);
 
 
-		return (k);
+		return (n);
 }
 
 /**
